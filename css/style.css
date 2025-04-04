@@ -1,3 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f4c542;
+}
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.header .nav a:hover {
+  color: #f4c542;
+}
+
+.hero {
+  background: url("../https://i.postimg.cc/4dK2Z8vX/zadanie-golden-4.png/hero.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero .btn {
+  display: inline-block;
+  background: #f4c542;
+  color: #111;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero .btn:hover {
+  background: #e5b734;
+}
+
+.services {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 3rem;
+}
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.services .services-grid .service {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.portfolio .portfolio-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.portfolio .portfolio-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.team {
+  padding: 4rem 1rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+.team h2 {
+  margin-bottom: 3rem;
+}
+.team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.team .team-grid .member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.team .team-grid .member h3 {
+  margin-bottom: 0.5rem;
+}
+.team .team-grid .member p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNBSjs7QURHRTtFQUNFLG1DQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7QUNBSjs7QURHRTtFQUNFLFVBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7QUNBSjs7QURJRTtFQUNFLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7QUNESjtBREdJO0VBQ0UsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsbUJBQUE7QUNETjtBRElJO0VBQ0UsaUJBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7QUNGTjtBREtJO0VBQ0UsZ0JBQUE7RUFDQSxhQUFBO0VBQ0EsU0FBQTtBQ0hOO0FETUk7RUFDRSxXQUFBO0VBQ0EscUJBQUE7QUNKTjtBRE1NO0VBQ0UsY0FBQTtBQ0pSOztBRFVFO0VBQ0UsK0dBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ1BKO0FEU0k7RUFDRSxlQUFBO0VBQ0EsbUJBQUE7QUNQTjtBRFVJO0VBQ0UsaUJBQUE7RUFDQSxtQkFBQTtBQ1JOO0FEV0k7RUFDRSxxQkFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLG9CQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkFBQTtBQ1ROO0FEV007RUFDRSxtQkFBQTtBQ1RSOztBRGVFO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FDWko7QURjSTtFQUNFLG1CQUFBO0FDWk47QURlSTtFQUNFLGFBQUE7RUFDQSwyREFBQTtFQUNBLFNBQUE7QUNiTjtBRGVNO0VBQ0UsZ0JBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx5Q0FBQTtBQ2JSOztBRG1CRTtFQUNFLGtCQUFBO0VBQ0Esa0JBQUE7QUNoQko7QURrQkk7RUFDRSxnQkFBQTtFQUNBLGFBQUE7RUFDQSwyREFBQTtFQUNBLFNBQUE7QUNoQk47QURrQk07RUFDRSxXQUFBO0VBQ0Esa0JBQUE7QUNoQlI7O0FEc0JFO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FDbkJKO0FEcUJJO0VBQ0UsbUJBQUE7QUNuQk47QURzQkk7RUFDRSxhQUFBO0VBQ0EsMkRBQUE7RUFDQSxTQUFBO0FDcEJOO0FEdUJRO0VBQ0UsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUNyQlY7QUR3QlE7RUFDRSxxQkFBQTtBQ3RCVjtBRHlCUTtFQUNFLFdBQUE7RUFDQSxpQkFBQTtBQ3ZCVjs7QUQ4QkU7RUFDRSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLG9CQUFBO0FDM0JKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
